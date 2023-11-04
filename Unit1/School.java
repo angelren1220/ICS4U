@@ -2,18 +2,20 @@ package Unit1;
 public class School {
   // Declaration of instance variables.
   public String name = "John";
+  public int id;
 
   // Declaration of constructor.
   School() {
-    int id = 1234;
-    System.out.println("Id of Student: " + id);
+    this.id = 1234;
+    // System.out.println("Id of Student: " + id);
   }
 
   // Declaration of user-defined method in instance area.
-  public void mySchool() {
+  public String mySchool() {
     // Declaration of local variable.
     String schoolName = "RSVM";
-    System.out.println("Name of School: " + schoolName);
+    return schoolName;
+    // System.out.println("Name of School: " + schoolName);
   }
 
   // public void mySchool1()
@@ -24,6 +26,9 @@ public class School {
   public static void main(String[] args) {
     // Create the object of class 'School'.
     School sc = new School();
-    sc.mySchool();
+    String schoolName = sc.mySchool();
+    System.out.println("Name of School: " +schoolName);  
+    System.out.println("Id of Student: " +sc.id); 
+
   }
 }
