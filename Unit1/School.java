@@ -1,4 +1,3 @@
-package Unit1;
 public class School {
   // Declaration of instance variables.
   public String name = "John";

@@ -1,5 +1,3 @@
-package Unit1;
-
 public class Calculation 
  { // Block 1 
 // Declaration of instance variables. 

@@ -1,5 +1,3 @@
-package Unit1;
-
 public class StaticTest 
  { 
 // Declaration of static variable. 
