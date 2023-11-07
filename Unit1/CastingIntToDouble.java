@@ -1,4 +1,4 @@
-public class DataTypeCasting1 {
+public class CastingIntToDouble {
   public static void main(String[] args) {
     // create int type variable
     int num = 10;
