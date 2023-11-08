@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class Numbers {
   public static void main(String[] args) {
@@ -17,5 +18,6 @@ public class Numbers {
     for(int i = 0; i < numbers.length; i++){
       System.out.println(numbers[i]);
     }
+    System.out.println(Arrays.toString(numbers));
   }
 }
