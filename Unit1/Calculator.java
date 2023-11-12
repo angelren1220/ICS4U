@@ -32,14 +32,18 @@ public class Calculator {
   }
 
   public static void main(String[] args) {
+    String[] operations = {" + ", " - ", " * ", " / ", " % ", " = "};
+
     Scanner sc = new Scanner(System.in);
     System.out.println("Enter number 1:");
     double num1 = sc.nextDouble();
     System.out.println("Enter number 2:");
     double num2 = sc.nextDouble();
-
+    
     displayMenu();
     int op = sc.nextInt();
+    
+    sc.close();
     
     double result = 0;
     
@@ -70,9 +74,12 @@ public class Calculator {
         result = remainder(num1, num2);
       }
       break;
+
+      default:
+        System.out.println("Invalid option");
+        return;
     }
     
-    System.out.println("The result is: " + result);
-    sc.close();
+    System.out.println(num1 + operations[op -1] + num2 + operations[5] + result);
   }
 }
