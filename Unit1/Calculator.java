@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Calculator {
 
-  static void displayMenu() {
+  public static void displayMenu() {
     System.out.println("Choose an option:");
     System.out.println("1. Addition");
     System.out.println("2. Subtraction");
@@ -10,6 +10,26 @@ public class Calculator {
     System.out.println("4. Division");
     System.out.println("5. Remainder");
   }
+
+public static double addition(double num1, double num2){
+  return num1 + num2;
+}
+
+public static double subtraction(double num1, double num2){
+  return num1 - num2;
+}
+
+public static double multiplication(double num1, double num2){
+  return num1 * num2;
+}
+
+public static double division(double num1, double num2){
+  return num1 / num2;
+}
+
+public static double remainder(double num1, double num2){
+  return num1 % num2;
+}
 
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
@@ -26,20 +46,20 @@ public class Calculator {
 
     switch (op) {
       case 1:
-        result = addition();
+        result = addition(num1, num2);
         break;
 
       case 2:
-        result = subtraction();
+        result = subtraction(num1, num2);
         break;
       case 3:
-        result = multiplication();
+        result = multiplication(num1, num2);
         break;
       case 4:
-        result = division();
+        result = division(num1, num2);
         break;
       case 5:
-        result = remainder();
+        result = remainder(num1, num2);
         break;
     }
   }
